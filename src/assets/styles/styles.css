@@ -1,3 +1,35 @@
-.hello {
-  background-color: red;
+body {
+  background-color:rgb(231, 227, 227)
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid rgb(129, 127, 127);
+}
+
+li {
+  border-bottom: 1px rgb(231, 227, 227) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  color: rgb(66, 69, 71);
+  padding: 8px;
+}
+
+#score_list > li:nth-child(even) {
+  /* background-color: #f2f2f2; */
+  background-color: white;
+}
+
+#score_list {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+  box-shadow: 5px 5px 15px 0px #000000;
 }

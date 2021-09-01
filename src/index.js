@@ -1,14 +1,10 @@
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import _ from 'lodash';
 import './assets/styles/styles.css';
 
-function component() {
-  const element = document.createElement('div');
+// let body = document.querySelector('body');
+// body.style.backgroundColor = "red";
+// body.style.color= "yellow";
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
 
-  return element;
-}
-
-document.body.appendChild(component());
