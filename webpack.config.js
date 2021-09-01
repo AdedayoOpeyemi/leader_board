@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Leader Board',
-      template: './src/index.html'
+      template: './src/index.html',
     }),
   ],
   devtool: 'inline-source-map',

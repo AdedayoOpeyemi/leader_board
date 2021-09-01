@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(231, 227, 227)
+  background-color: rgb(231, 227, 227);
 }
 
 ul {
@@ -31,5 +31,5 @@ li {
 }
 
 input {
-  box-shadow: 5px 5px 15px 0px #000000;
+  box-shadow: 5px 5px 15px 0 #353434;
 }
