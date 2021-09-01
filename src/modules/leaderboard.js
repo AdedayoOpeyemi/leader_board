@@ -25,4 +25,4 @@ const myLeaderboard = [
   },
 ];
 
-export { myLeaderboard as default};
+export { myLeaderboard as default };
