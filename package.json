@@ -34,6 +34,9 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "@popperjs/core": "^2.9.2",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   }
 }
