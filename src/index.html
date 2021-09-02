@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leader Board</title>
+</head>
+<body>
+  <div class="container-lg">
+    <div class="row">
+      <h1 class="mt-5">Leader Board</h1>
+      <div class="col-sm p-3">
+        <div class="d-flex flex-row mt-5 mb-5 justify-content-around">
+          <h4>Recent Scores</h4>
+          <button>Refresh</button>
+        </div>
+        <div>
+          <ul id="score_list">
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="col-sm p-3">
+        <h4 class="mt-5 mb-5">Add your Score</h4>
+        <form >
+          <input type="text" id="namefield" name="player_name" placeholder="player name"><br><br>
+          <input type="text" id="scorefield" name="player_score" placeholder="Player score"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
