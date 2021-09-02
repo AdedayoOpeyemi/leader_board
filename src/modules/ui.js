@@ -1,10 +1,10 @@
-import myLeaderboard from './leaderboard.js';
+import getScores from './leaderboard.js';
 
-const renderLeaderBoard = () => {
+const renderLeaderBoard = async () => {
   const list = document.getElementById('score_list');
   list.innerHTML = '';
-
-  myLeaderboard.forEach((score) => {
+  let scores = await getScores()
+  scores.forEach((score) => {
     const scoreCard = document.createElement('li');
     scoreCard.innerHTML = `${score.name}: ${score.score}`;
     list.appendChild(scoreCard);
