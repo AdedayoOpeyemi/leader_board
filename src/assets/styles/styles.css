@@ -1,11 +1,47 @@
 body {
-  background-color: rgb(231, 227, 227);
+  background-color: #bacec1;
+}
+
+.page-title {
+  background-color: #1d3124;
+  color: #fff;
+  padding: 8px;
+}
+
+button,
+#postscore {
+  background-color: #e59560;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.section-headers {
+  background-color: #1d3124;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  padding: 8px;
+}
+
+h4 {
+  line-height: normal;
+  margin: 0;
+  font-weight: bold;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-  border: 1px solid rgb(129, 127, 127);
+  border: 8px solid rgb(241, 234, 234);
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 li {
@@ -20,16 +56,20 @@ li {
 }
 
 #score_list > li:nth-child(even) {
-  /* background-color: #f2f2f2; */
   background-color: white;
+}
+
+#score_list > li:nth-child(odd) {
+  background-color: #738d7c;
 }
 
 #score_list {
   width: 60%;
+  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
 }
 
 input {
-  box-shadow: 5px 5px 15px 0 #353434;
+  outline: none;
 }
