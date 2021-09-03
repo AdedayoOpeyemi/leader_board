@@ -7,11 +7,15 @@
   <title>Leader Board</title>
 </head>
 <body>
-  <div class="container-lg">
+  <div class="page-title container-fluid">
+  <h1 class="mt-5 page-title">Leader Board</h1>
+  </div>
+  <div class="container-xl">
+    
+    
     <div class="row">
-      <h1 class="mt-5">Leader Board</h1>
       <div class="col-sm p-3">
-        <div class="d-flex flex-row mt-5 mb-5 justify-content-around">
+        <div class="d-flex flex-row mt-5 mb-5 justify-content-around section-headers">
           <h4>Recent Scores</h4>
           <button id="refresh">Refresh</button>
         </div>
@@ -25,9 +29,9 @@
       <div class="col-sm p-3">
         <h4 class="mt-5 mb-5">Add your Score</h4>
         <form >
-          <input type="text" id="namefield" name="player_name" placeholder="player name"><br><br>
-          <input type="number" id="scorefield" name="player_score" placeholder="Player score"><br><br>
-          <input type="submit" value="Submit">
+          <input type="text" id="namefield" name="player_name" placeholder="player name" required><br><br>
+          <input type="number" id="scorefield" name="player_score" placeholder="Player score" required><br><br>
+          <input type="submit" value="Submit" id="postscore">
         </form>
 
       </div>
