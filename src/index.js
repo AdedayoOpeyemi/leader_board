@@ -11,12 +11,17 @@ document.addEventListener(
 
 const form = document.querySelector('form');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const name = document.querySelector('#namefield').value;
   const score = document.querySelector('#scorefield').value;
-  postToAPI(JSON.stringify({ user: name, score }));
-  renderLeaderBoard();
+  let res = null
+  postToAPI(JSON.stringify({ user: name, score })).then( () => {
+    renderLeaderBoard()
+  });
+
+  document.querySelector('#namefield').value = "";
+  document.querySelector('#scorefield').value = "";
 });
 
 const refreshButton = document.querySelector('#refresh');

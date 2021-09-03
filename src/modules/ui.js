@@ -1,4 +1,4 @@
-import getScores from './leaderboard.js';
+import { getScores } from './leaderboard.js';
 
 const clearBoard = () => {
   const list = document.getElementById('score_list');
