@@ -1,9 +1,14 @@
 import getScores from './leaderboard.js';
 
-const renderLeaderBoard = async () => {
+const clearBoard = () => {
   const list = document.getElementById('score_list');
   list.innerHTML = '';
-  let scores = await getScores()
+};
+
+const renderLeaderBoard = async () => {
+  const list = document.getElementById('score_list');
+  clearBoard();
+  const scores = await getScores();
   scores.forEach((score) => {
     const scoreCard = document.createElement('li');
     scoreCard.innerHTML = `${score.user}: ${score.score}`;
