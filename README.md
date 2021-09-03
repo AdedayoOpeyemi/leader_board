@@ -15,6 +15,14 @@ Basic UI
 - Don't make API calls (you'll do it in a following lesson).
 - Use ES6 modules, with import and export.
 
+## Project requirements stage 2
+- Read the Leaderboard API documentation to learn how to use this API.
+- Create a new game with the name of your choice by using the API.
+- Implement the "Refresh" button (receiving data from the API and parsing the JSON).
+- Implement the form "Submit" button (sending data to the API).
+- Use async and await JavaScript features to consume the API.
+- No styling is required.
+
 ## Built With
 
 - Webpack

@@ -1,12 +1,17 @@
-import myLeaderboard from './leaderboard.js';
+import { getScores } from './leaderboard.js';
 
-const renderLeaderBoard = () => {
+const clearBoard = () => {
   const list = document.getElementById('score_list');
   list.innerHTML = '';
+};
 
-  myLeaderboard.forEach((score) => {
+const renderLeaderBoard = async () => {
+  const list = document.getElementById('score_list');
+  clearBoard();
+  const scores = await getScores();
+  scores.forEach((score) => {
     const scoreCard = document.createElement('li');
-    scoreCard.innerHTML = `${score.name}: ${score.score}`;
+    scoreCard.innerHTML = `${score.user}: ${score.score}`;
     list.appendChild(scoreCard);
   });
 };
