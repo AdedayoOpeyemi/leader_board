@@ -6,7 +6,7 @@ const renderLeaderBoard = async () => {
   let scores = await getScores()
   scores.forEach((score) => {
     const scoreCard = document.createElement('li');
-    scoreCard.innerHTML = `${score.name}: ${score.score}`;
+    scoreCard.innerHTML = `${score.user}: ${score.score}`;
     list.appendChild(scoreCard);
   });
 };
