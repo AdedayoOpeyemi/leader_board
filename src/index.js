@@ -15,13 +15,12 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const name = document.querySelector('#namefield').value;
   const score = document.querySelector('#scorefield').value;
-  let res = null
-  postToAPI(JSON.stringify({ user: name, score })).then( () => {
-    renderLeaderBoard()
+  postToAPI(JSON.stringify({ user: name, score })).then(() => {
+    renderLeaderBoard();
   });
 
-  document.querySelector('#namefield').value = "";
-  document.querySelector('#scorefield').value = "";
+  document.querySelector('#namefield').value = '';
+  document.querySelector('#scorefield').value = '';
 });
 
 const refreshButton = document.querySelector('#refresh');
