@@ -3,7 +3,7 @@
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## Live Demo
-[Leaderboard App](https://elated-banach-f78888.netlify.app/)
+[Leaderboard App](https://loving-heyrovsky-67ea0d.netlify.app/)
 
 ![App Screenshot](./src/assets/images/screenshot.png)
 
